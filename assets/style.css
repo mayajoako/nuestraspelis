@@ -11,35 +11,41 @@
 html {
     font-family: 'Kalam', cursive;
     list-style: none;
-    background-color: var(--bleached-cedar-200);
+    background-color: var(--bleached-cedar-50);
 }
 
 :root {
-    --bleached-cedar-50: #f2f2fb;
-    --bleached-cedar-100: #e9e8f7;
-    --bleached-cedar-200: #d7d5f0;
-    --bleached-cedar-300: #bebbe6;
-    --bleached-cedar-400: #a89fda;
-    --bleached-cedar-500: #9586ce;
-    --bleached-cedar-600: #866dbe;
-    --bleached-cedar-700: #745ca6;
-    --bleached-cedar-800: #5e4d86;
-    --bleached-cedar-900: #4e436c;
-    --bleached-cedar-950: #2c253c;
+        --bleached-cedar-50: #fef2e8;
+        --bleached-cedar-100: #fddfc4;
+        --bleached-cedar-200: #fcbd8c;
+        --bleached-cedar-300: #f9934b;
+        --bleached-cedar-400: #f56a1a;
+        --bleached-cedar-500: #e5530d;
+        --bleached-cedar-600: #c63708;
+        --bleached-cedar-700: #9e210a;
+        --bleached-cedar-800: #831b10;
+        --bleached-cedar-900: #090101e5;
+        --bleached-cedar-950: #090101;
 }
 
 .header {
-    background-color: var(--bleached-cedar-500);
+    background-color: var(--bleached-cedar-950);
     width: 100%;
     height: 75px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .header i {
-    font-size: 45px;
-    color: var(--bleached-cedar-950);
+    font-size: 25px;
+    color: var(--bleached-cedar-100);
+}
+
+.header p {
+    font-size: 25px;
+    color: var(--bleached-cedar-100);
 }
 
 .main {
@@ -76,20 +82,27 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--bleached-cedar-950);
+    background-color: var(--bleached-cedar-50);
     border-radius: 15px;
     gap: 10px;
     transition: all 0.2s ease-in-out;
+    box-shadow: 10px 10px 6px -3px rgba(9,1,1,0.09);
+    -webkit-box-shadow: 10px 10px 6px -3px rgba(9,1,1,0.09);
+    -moz-box-shadow: 10px 10px 6px -3px rgba(9,1,1,0.09);
 }
 
 .card:hover {
-    background-color: var(--bleached-cedar-900);
+    background-color: var(--bleached-cedar-100);
     transition: all 0.2s ease-in-out;
 }
 
 .card a {
-    color: var(--bleached-cedar-100);
+    color: var(--bleached-cedar-900);
     font-size: 20px;
+}
+
+.card a:hover {
+    color: var(--bleached-cedar-700);
 }
 
 .card img {
@@ -104,11 +117,14 @@ html {
     bottom: 0;
     width: 100%;
     height: 75px;
-    background-color: var(--bleached-cedar-500);
+    background-color: var(--bleached-cedar-950);
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.footer p {
+    color: var(--bleached-cedar-100);
 }
 
 @media (max-width: 1080px) {
